@@ -2,7 +2,7 @@
 
 set -eu
 
-/opt/idea/bin/inspect.sh ${GITHUB_WORKSPACE}/build.sbt ${GITHUB_WORKSPACE}/${INPUT_INSPECTIONS_FILE} ${GITHUB_WORKSPACE}/target/idea_inspections -v2
+/opt/idea/bin/inspect.sh ${GITHUB_WORKSPACE} ${GITHUB_WORKSPACE}/${INPUT_INSPECTIONS_FILE} ${GITHUB_WORKSPACE}/target/idea_inspections -v2
 
 echo "GITHUB_EVENT_PATH: ${GITHUB_EVENT_PATH}"
 echo "GITHUB_REF: ${GITHUB_REF}"
