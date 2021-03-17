@@ -20,7 +20,7 @@ Path to inspections file relative to root of project directory.
 
 ```yml
 - name: Run IntelliJ Inspections
-  uses: chetanfaris/intellij-inspections@v1
+  uses: chetanfaris/intellij-inspections@sbt
   with:
     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     INSPECTIONS_FILE: Inspections.xml
